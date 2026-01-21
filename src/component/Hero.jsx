@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import sarfaraz from "../assets/sarfaraz.jpeg"
+import Sarfaraz from "../assets/sarfaraz.jpeg"
 
 
 function Hero() {
@@ -39,7 +39,7 @@ function Hero() {
         {/* RIGHT IMAGE */}
         <div className="md:w-1/2 flex justify-center">
           <div className="relative w-64 h-64 md:w-80 md:h-80">
-            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple to-pink animate-pulse opacity-70"></div>
+            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple to-pink opacity-70"></div>
 
             <motion.img
               animate={{y:[0 , -20, 0]}}
@@ -50,12 +50,12 @@ function Hero() {
                 ease:"easeInOut"
               }}
               className="relative rounded-full w-64 h-64 md:w-80 md:h-80 object-cover z-10 animate-float"
-              src={sarfaraz}
-              alt="Profile"
+              src={Sarfaraz}
+              alt="Profile" 
          />
           </div>
         </div>
-
+        
       </div>
     </motion.div>
   );
