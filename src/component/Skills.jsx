@@ -34,20 +34,20 @@ const skillsData = [
       "Designing and optimizing databases for performance and scalability.",
     tags: ["MongoDB", "PostgreSQL", "MySQL", "Firebase"],
   },
-  {
-    icon: FaMobileAlt,
-    title: "Mobile Development",
-    description:
-      "Building cross-platform mobile applications with modern tools.",
-    tags: ["React Native", "Flutter"],
-  },
-  {
-    icon: FaCloud,
-    title: "Cloud & DevOps",
-    description:
-      "Deploying and managing applications in cloud environments.",
-    tags: ["AWS", "Docker", "CI/CD"],
-  },
+  // {
+  //   icon: FaMobileAlt,
+  //   title: "Mobile Development",
+  //   description:
+  //     "Building cross-platform mobile applications with modern tools.",
+  //   tags: ["React Native", "Flutter"],
+  // },
+  // {
+  //   icon: FaCloud,
+  //   title: "Cloud & DevOps",
+  //   description:
+  //     "Deploying and managing applications in cloud environments.",
+  //   tags: ["AWS", "Docker", "CI/CD"],
+  // },
   {
     icon: FaTools,
     title: "Tools & Technologies",
@@ -64,8 +64,8 @@ function Skills() {
       id="skills"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-      viewport={{ once: true }}
+      transition={{ duration: 1, ease: "easeOut" }}
+      viewport={{ once: false , amount: 0.2}}
       className="py-20 bg-dark-100"
     >
       <div className="container mx-auto px-6">
