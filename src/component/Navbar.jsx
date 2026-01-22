@@ -61,7 +61,7 @@ function Navbar() {
           </a>
 
           <a
-            href="#contact"
+            href="#contacts"
             className="relative text-white/80 transition duration-300 hover:text-purple group"
           >
             <span>Contact</span>
