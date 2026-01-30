@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaXmark } from "react-icons/fa6";
 import { FaBars } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -8,16 +9,16 @@ function Navbar() {
     <nav className="fixed w-full z-50 bg-dark-100/90 backdrop-blur-sm py-4 px-8 shadow-lg">
       <div className="container mx-auto flex items-center justify-between">
         <div>
-          <a href="#" className="text-3xl font-bold text-white">
+          <Link to="/" className="text-3xl font-bold text-white">
             Siddiqui
             <span className="text-purple">Sarfaraz</span>
             <div className="w-4 h-4 bg-purple rounded-full"></div>
-          </a>
+          </Link>
         </div>
 
         <div className="hidden md:flex space-x-10">
-          <a
-            href="#home"
+          <Link
+            to="/"
             className="relative text-white/80 transition duration-300 hover:text-purple group"
           >
             <span>Home</span>
@@ -25,10 +26,10 @@ function Navbar() {
               className="absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300
             group-hover:w-full"
             ></span>
-          </a>
+          </Link>
 
-          <a
-            href="#about"
+          <Link
+            to="/about"
             className="relative text-white/80 transition duration-300 hover:text-purple group"
           >
             <span>About</span>
@@ -36,10 +37,10 @@ function Navbar() {
               className="absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300
             group-hover:w-full"
             ></span>
-          </a>
+          </Link>
 
-          <a
-            href="#skills"
+          <Link
+            to="/skills"
             className="relative text-white/80 transition duration-300 hover:text-purple group"
           >
             <span>Skills</span>
@@ -47,10 +48,10 @@ function Navbar() {
               className="absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300
             group-hover:w-full"
             ></span>
-          </a>
+          </Link>
 
-          <a
-            href="#project"
+          <Link
+            to="/project"
             className="relative text-white/80 transition duration-300 hover:text-purple group"
           >
             <span>Projects</span>
@@ -58,10 +59,10 @@ function Navbar() {
               className="absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300
             group-hover:w-full"
             ></span>
-          </a>
+          </Link>
 
-          <a
-            href="#contacts"
+          <Link
+            to="/contacts"
             className="relative text-white/80 transition duration-300 hover:text-purple group"
           >
             <span>Contact</span>
@@ -69,7 +70,7 @@ function Navbar() {
               className="absolute left-0 -bottom-1 w-0 h-0.5 bg-purple transition-all duration-300
             group-hover:w-full"
             ></span>
-          </a>
+          </Link>
           
         </div>
 
@@ -102,45 +103,45 @@ function Navbar() {
       {
         showMenu && (
           <div className="md:hidden mt-4 bg-dark-300 h-screen rounded-lg p-4 flex flex-col space-y-4 text-center justify-center">
-            <a onClick={() => setShowMenu(!showMenu)}
-            href="#home"
+            <Link onClick={() => setShowMenu(!showMenu)}
+            to="/"
             className="relative text-white/80 transition duration-300 hover:text-purple group"
           >
             <span>Home</span>
             
-          </a>
+          </Link>
 
-          <a onClick={() => setShowMenu(!showMenu)}
-            href="#about"
+          <Link onClick={() => setShowMenu(!showMenu)}
+            to="/about"
             className="relative text-white/80 transition duration-300 hover:text-purple group"
           >
             <span>About</span>
            
-          </a>
+          </Link>
 
-          <a onClick={() => setShowMenu(!showMenu)}
-            href="#skills"
+          <Link onClick={() => setShowMenu(!showMenu)}
+            to="/skills"
             className="relative text-white/80 transition duration-300 hover:text-purple group"
           >
             <span>Skills</span>
             
-          </a>
+          </Link>
 
-          <a onClick={() => setShowMenu(!showMenu)}
-            href="#project"
+          <Link onClick={() => setShowMenu(!showMenu)}
+            to="/project"
             className="relative text-white/80 transition duration-300 hover:text-purple group"
           >
             <span>Projects</span>
             
-          </a>
+          </Link>
 
-          <a onClick={() => setShowMenu(!showMenu)}
-            href="#contact"
+          <Link onClick={() => setShowMenu(!showMenu)}
+            to="/contact"
             className="relative text-white/80 transition duration-300 hover:text-purple group"
           >
             <span>Contact</span>
            
-          </a>
+          </Link>
           </div>
         )
       }

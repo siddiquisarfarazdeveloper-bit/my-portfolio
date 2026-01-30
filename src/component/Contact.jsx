@@ -103,16 +103,20 @@ function Contact() {
               <div className="pt-4">
                 <h3 className="text-lg font-semibold mb-4">Follow Me</h3>
                 <div className="flex space-x-4">
-                  <a href="#" className="w-12 h-12 rounded-full bg-dark-300 flex items-center justify-center
+                  <a
+                   href="#" className="w-12 h-12 rounded-full bg-dark-300 flex items-center justify-center
                   text-purple hover:bg-purple hover:text-white transition duration-300"><FaGithub/></a>
 
-                   <a href="#" className="w-12 h-12 rounded-full bg-dark-300 flex items-center justify-center
+                   <a
+                    href="#" className="w-12 h-12 rounded-full bg-dark-300 flex items-center justify-center
                   text-blue hover:bg-blue hover:text-white transition duration-300"><FaLinkedin/></a>
 
-                   <a href="#" className="w-12 h-12 rounded-full bg-dark-300 flex items-center justify-center
+                   <a
+                    href="/" className="w-12 h-12 rounded-full bg-dark-300 flex items-center justify-center
                   text-blue hover:bg-blue hover:text-white transition duration-300"><FaTwitter/></a>
 
-                   <a href="#" className="w-12 h-12 rounded-full bg-dark-300 flex items-center justify-center
+                   <a
+                    href="/" className="w-12 h-12 rounded-full bg-dark-300 flex items-center justify-center
                   text-pink hover:bg-pink hover:text-white transition duration-300"><FaDribbble/></a>
 
                 </div>
